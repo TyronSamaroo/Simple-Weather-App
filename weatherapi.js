@@ -6,7 +6,7 @@ document.getElementById('search').addEventListener('click',function(){
     xhr.addEventListener("load",responseRecievedHandler);
     xhr.responseType = 'json';
     var queryString = `units=imperial&zip=${zipcode},us&appid=${APIKEY}`;
-    xhr.open("GET","http://api.openweathermap.org/data/2.5/weather?" + queryString);
+    xhr.open("GET","https://api.openweathermap.org/data/2.5/weather?" + queryString);
     xhr.send();
     }
 );
